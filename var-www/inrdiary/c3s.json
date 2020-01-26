@@ -1,0 +1,26 @@
+{
+	"name": "INR Diary",
+
+	"contentRepositoryConnection": {
+		"type": "PRISMIC",
+		"repositoryId": "https://inrdiary.cdn.prismic.io/api"
+	},
+
+	"locationSettings": {
+		"locale": "nl_BE",
+		"timeZone": "Europe/Brussels"
+	},
+
+	"errorPage": {
+		"name": "Error",
+		"contents": "pages/error.ftl"
+	},
+
+	"pages": [
+		{
+			"friendlyUrl": "index",
+			"name": "INR Diary",
+			"contents": "pages/index.ftl"
+		}
+	]
+}

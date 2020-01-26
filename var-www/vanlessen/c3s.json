@@ -1,0 +1,79 @@
+{
+	"name": "Kinepraktijk Van Lessen",
+
+	"contentRepositoryConnection": {
+		"type": "PRISMIC",
+		"repositoryId": "https://kinepraktijkvanlessen.cdn.prismic.io/api"
+	},
+
+	"locationSettings": {
+		"locale": "nl_BE",
+		"timeZone": "Europe/Brussels"
+	},
+
+	"templates": [
+		{
+			"name": "page",
+			"contents": "templates/page.ftl"
+		},
+		{
+			"name": "subpage",
+			"extendsFrom": "page",
+			"inserts": {
+				"contents": "templates/subpage.ftl"
+			}
+		}
+	],
+
+	"errorPage": {
+		"name": "Fout",
+		"template": "page",
+		"inserts": {
+			"contents": "pages/error.ftl"
+		}
+	},
+
+	"pages": [
+		{
+			"friendlyUrl": "home",
+			"name": "Home",
+			"hidden": true,
+			"template": "page",
+			"inserts": {
+				"contents": "pages/home.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "uw-therapeut",
+			"name": "Uw therapeut",
+			"template": "subpage",
+			"inserts": {
+				"subcontents": "pages/uw-therapeut.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "specialisaties",
+			"name": "Specialisaties",
+			"template": "subpage",
+			"inserts": {
+				"subcontents": "pages/specialisaties.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "nuttige-info",
+			"name": "Nuttige info",
+			"template": "subpage",
+			"inserts": {
+				"subcontents": "pages/nuttige-info.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "contact",
+			"name": "Contact",
+			"template": "subpage",
+			"inserts": {
+				"subcontents": "pages/contact.ftl"
+			}
+		}
+	]
+}

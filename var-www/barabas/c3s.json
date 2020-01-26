@@ -1,0 +1,71 @@
+{
+	"name": "Barabas Bilzen",
+
+	"contentRepositoryConnection": {
+		"type": "PRISMIC",
+		"repositoryId": "https://barabas.cdn.prismic.io/api"
+	},
+
+	"locationSettings": {
+		"locale": "nl_NL",
+		"timeZone": "Europe/Brussels"
+	},
+
+	"templates": [
+		{
+			"name": "base",
+			"contents": "templates/base.ftl"
+		}
+	],
+
+	"errorPage": {
+		"name": "Oeps!",
+		"template": "base",
+		"inserts": {
+			"body": "pages/error.ftl"
+		}
+	},
+
+	"pages": [
+		{
+			"friendlyUrl": "home",
+			"name": "Home",
+			"template": "base",
+			"inserts": {
+				"body": "pages/home.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "tapas",
+			"name": "Tapas",
+			"template": "base",
+			"inserts": {
+				"body": "pages/tapas.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "drinks",
+			"name": "Drinks",
+			"template": "base",
+			"inserts": {
+				"body": "pages/drinks.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "contact",
+			"name": "Contact",
+			"template": "base",
+			"inserts": {
+				"body": "pages/contact.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "jobs",
+			"name": "Jobs",
+			"template": "base",
+			"inserts": {
+				"body": "pages/jobs.ftl"
+			}
+		}
+	]
+}

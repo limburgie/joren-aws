@@ -1,0 +1,1 @@
+${api.query("wedstrijdreglement").findOne().getRichText("informatie").html}

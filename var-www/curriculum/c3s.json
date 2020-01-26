@@ -1,0 +1,39 @@
+{
+	"name": "CV Peter Mesotten",
+
+	"contentRepositoryConnection": {
+		"type": "PRISMIC",
+		"repositoryId": "https://curriculum.cdn.prismic.io/api"
+	},
+
+	"locationSettings": {
+		"locale": "en_GB",
+		"timeZone": "Europe/Brussels"
+	},
+
+	"templates": [
+		{
+			"name": "base",
+			"contents": "templates/base.ftl"
+		}
+	],
+
+	"errorPage": {
+		"name": "Oops!",
+		"template": "base",
+		"inserts": {
+			"body": "pages/error.ftl"
+		}
+	},
+
+	"pages": [
+		{
+			"friendlyUrl": "home",
+			"name": "Home",
+			"template": "base",
+			"inserts": {
+				"body": "pages/home.ftl"
+			}
+		}
+	]
+}

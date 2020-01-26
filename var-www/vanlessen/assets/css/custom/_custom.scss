@@ -1,0 +1,32 @@
+/* Add here all your css styles (customizations) */
+
+// Variables
+@import "custom.variables";
+
+// Mixins
+@import "custom.mixins";
+
+// Other styling
+
+.c3s-edit-link {
+	text-decoration: none !important;
+	margin: 15px 0;
+
+	&:after {
+		font-family: "FontAwesome","Open Sans";
+		font-weight: 700;
+		content: "\f040  Aanpassen";
+		background: #E74B3D;
+		padding: 10px 15px;
+		color: white;
+		border-radius: 5px;
+		box-shadow: 3px 3px 10px rgba(#000, 0.2);
+	}
+}
+
+#above-footer .c3s-edit-link:after,
+.carousel .c3s-edit-link:after {
+	margin: auto;
+	display: block;
+	width: 130px;
+}
